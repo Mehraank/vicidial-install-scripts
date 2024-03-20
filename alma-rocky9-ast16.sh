@@ -592,11 +592,11 @@ chmod +x /etc/rc.d/rc.local
 systemctl enable rc-local
 systemctl start rc-local
 
-##Install CyburPhone
+##Install ViciPhone
 cd /var/www/html
-git clone https://github.com/carpenox/CyburPhone.git
-chmod -R 744 CyburPhone
-chown -R apache:apache CyburPhone
+git clone https://github.com/vicimikec/ViciPhone.git
+chmod -R 744 ViciPhone
+chown -R apache:apache ViciPhone
 
 ##Install Dynportal
 yum install -y firewalld
@@ -728,12 +728,7 @@ EOF
 sed -i 's|#Banner none|Banner /etc/ssh/sshd_banner|g' /etc/ssh/sshd_config
 
 tee -a /etc/ssh/sshd_banner <<EOF
-Thank you for choosing CyburDial and carpenox's auto installer!
-
-Visit our Knowledge Base at https://www.dialer.one
-
-Support: info@dialer.one
-Skype Live Chat Support: https://join.skype.com/ujkQ7i5lV78O
+Thank you for choosing PinnacleVoice Networks
 EOF
 
 #add rc-local as a service - thx to ras
