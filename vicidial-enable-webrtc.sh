@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "Download CyburPhone"
+echo "Download ViciPhone"
 cd /var/www/html
-git clone https://github.com/carpenox/CyburPhone.git
-chmod -R 744 CyburPhone
-chown -R apache:apache CyburPhone
+git clone https://github.com/vicimikec/ViciPhone.git
+chmod -R 744 ViciPhone
+chown -R apache:apache ViciPhone
 
 echo "Install certbot for LetsEncrypt"
 if [ -f /etc/redhat-release ]; then
