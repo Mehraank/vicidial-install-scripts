@@ -1,15 +1,6 @@
-For those of you who don't know who I am, I am carpenox from the ViciDial forums and as most people can confirm, I help out of the goodness of my heart to our community. I want us all to succeed together! With that being said, If my knowledge base or my github has helped you or your business, please feel free to donate to help me keep the help going.
-
-
-# www.dialer.one for our full knowledge base
-
-# Need help? Hit me up on Skype: live:carpenox_3
-# Have I helped you? Please feel free to donate here: https://www.paypal.me/TheDialerOne
-
-
 # VICIDIAL INSTALLATION SCRIPTS (Default is Eastern Time Zone US)
 # Centos, Rocky and AlmaLinux Vicidial Install pre_requisites 
-# I have created a faster auto installer for Alma and Rocky 9 that will also install the dynamic portal and the CyburPhone
+# I have created a faster auto installer for Alma and Rocky 9 that will also install the dynamic portal and the ViciPhone
 
 ```
 
@@ -40,11 +31,11 @@ reboot
 
 ```
 cd /usr/src/
-git clone https://github.com/carpenox/vicidial-install-scripts.git
+git clone https://github.com/Mehraank/vicidial-install-scripts.git
 cd vicidial-install-scripts
 ```
 
-# Alma/Rocky 9 Installer with Dynamic portal, CyburPhone, SSL Cert and Asterisk 16
+# Alma/Rocky 9 Installer with Dynamic portal, ViciPhone, SSL Cert and Asterisk 16
 
 ```
 chmod +x alma-rocky9-ast16.sh
@@ -53,14 +44,7 @@ chmod +x alma-rocky9-ast16.sh
 
 Make sure you update your SSL cert location in /etc/httpd/conf.d/viciportal-ssl.conf
 
-# Alma/Rocky 9 Installer with Dynamic portal and CyburPhone with SSL cert with Asterisk 18
 
-```
-chmod +x alma-rocky9-ast18.sh
-./alma-rocky9-ast18.sh
-```
-
-Make sure you update your SSL cert location in /etc/httpd/conf.d/viciportal-ssl.conf
 
 # Install a default database with everything setup ready to go
 
